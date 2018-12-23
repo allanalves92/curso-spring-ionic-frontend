@@ -1,6 +1,5 @@
 import { API_CONFIG } from "./../config/api.config";
 import { CredenciaisDTO } from "./../models/credenciais.dto";
-import { Observable } from "rxjs/Rx";
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { LocalUser } from "../models/local_user";
