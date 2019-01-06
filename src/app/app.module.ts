@@ -1,3 +1,4 @@
+import { ImageUtilService } from "./../services/image-util.service";
 import { CartService } from "./../services/domain/cart.service";
 import { ProdutoService } from "./../services/domain/produtos.service";
 import { AuthInterceptorProvider } from "./../interceptors/auth-interceptor";
@@ -32,7 +33,8 @@ import { AuthService } from "../services/auth.service";
     StorageService,
     ClienteService,
     ProdutoService,
-    CartService
+    CartService,
+    ImageUtilService
   ]
 })
 export class AppModule {}
