@@ -10,6 +10,9 @@
     </button></ion-fab>
 </ion-header>
 <ion-content padding>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
   <ion-list>
     <button ion-item *ngFor="let item of items" (click)="showDetail(item.id);">
       <ion-thumbnail item-start>
