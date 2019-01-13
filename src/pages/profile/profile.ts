@@ -72,7 +72,9 @@ export class ProfilePage {
         this.picture = "data:image/png;base64," + imageData;
         this.cameraOn = false;
       },
-      err => {}
+      err => {
+        this.cameraOn = false;
+      }
     );
   }
 
@@ -92,7 +94,9 @@ export class ProfilePage {
         this.picture = "data:image/png;base64," + imageData;
         this.cameraOn = false;
       },
-      err => {}
+      err => {
+        this.cameraOn = false;
+      }
     );
   }
 
